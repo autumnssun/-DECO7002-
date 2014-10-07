@@ -1,0 +1,30 @@
+$icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+/*
+ We're using CSS transitions for when
+ the enter and move events are triggered
+ for the element that has the .repeated-item
+ class
+*/
+
+@import "mixin.scss";
+@import "animation.scss";
+.card {
+    @include cardview();
+    min-height: 300px;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0;
+}
+.color {
+    color: $paper;
+}
+.blue {
+    background-color: $blue_a;
+}
+.lightPink {
+    background-color: $lightPink;
+}
+

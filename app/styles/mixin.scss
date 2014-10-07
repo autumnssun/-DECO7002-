@@ -1,0 +1,41 @@
+$blue_a:#45CEEF;
+$yellow:#FFF5A5;
+$lightPink:#FFD4DA;
+$blue_b:#99D2E4;
+$earth:#B8A6D8;
+$white:#ffffff;
+$paper:#fafafa;
+$showdowcolor:rgba(100, 100, 100, 0.5);
+@mixin shadow_1() {
+    $shadows: 0px 0px 4px 3px $showdowcolor;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+@mixin shadow_2() {
+    $shadows: 0px 0px 3px 0px $showdowcolor;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+@mixin shadow($amount) {
+    $shadows: 0px 0px $amount 0px $showdowcolor;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+@mixin border_radius($amount) {
+    -webkit-border-radius: $amount;
+    -moz-border-radius: $amount;
+    border-radius: $amount;
+}
+@mixin cardview() {
+    @include shadow(7px);
+    @include border_radius(2px);
+    border: 1px soild $white;
+}
+@mixin circle() {
+    @include border_radius(50%);
+    overflow: hidden;
+}
+
