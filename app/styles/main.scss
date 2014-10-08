@@ -13,7 +13,6 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 @import "animation.scss";
 .card {
     @include cardview();
-    min-height: 300px;
     padding: 1em;
     margin: 1em;
     margin-bottom: 0;

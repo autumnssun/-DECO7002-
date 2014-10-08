@@ -20,26 +20,15 @@ angular.module('animationProjectApp')
         $scope.pop = function() {
             $scope.items.pop();
         };
-        $scope.items = [{
-            'id': '1'
-        }, {
-            'id': '2'
-        }, {
-            'id': '3'
-        }, {
-            'id': '4'
-        }, {
-            'id': '5'
-        }, {
-            'id': '6'
-        }, {
-            'id': '7'
-        }, {
-            'id': '8'
-        }, {
-            'id': '9'
-        }, {
-            'id': '0'
-        }, ];
+        $scope.addHeap = function() {
+            console.log('d');
+            for (var i = 0; i < 20; i++) {
+                $scope.items.push(+new Date() + i);
+                console.log($scope.items);
+            }
+        };
+        $scope.clear = function() {
+            $scope.items = [];
+        };
 
     });
