@@ -8,6 +8,5 @@
  * Controller of the animationProjectApp
  */
 angular.module('animationProjectApp')
-  .controller('IndexcontrollerCtrl', function ($scope) {
-    $scope.animationClass='animation';
+  .controller('IndexcontrollerCtrl', function () {
   });

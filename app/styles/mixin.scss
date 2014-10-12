@@ -5,7 +5,10 @@ $blue_b:#99D2E4;
 $earth:#B8A6D8;
 $white:#ffffff;
 $paper:#fafafa;
+$cardMargin:0.5em;
+$cardHeight:10em;
 $showdowcolor:rgba(100, 100, 100, 0.5);
+
 @mixin shadow_1() {
     $shadows: 0px 0px 4px 3px $showdowcolor;
     -moz-box-shadow: $shadows;
@@ -30,7 +33,7 @@ $showdowcolor:rgba(100, 100, 100, 0.5);
     border-radius: $amount;
 }
 @mixin cardview() {
-    @include shadow(7px);
+    @include shadow(5px);
     @include border_radius(2px);
     border: 1px soild $white;
 }

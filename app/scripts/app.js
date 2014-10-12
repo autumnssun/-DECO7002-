@@ -27,6 +27,14 @@ angular
         templateUrl: 'views/page_a.html',
         controller: 'PageACtrl'
       })
+      .when('/paitentsList', {
+        templateUrl: 'views/paitentslist.html',
+        controller: 'PaitentslistCtrl'
+      })
+      .when('/sandbox', {
+        templateUrl: 'views/sandbox.html',
+        controller: 'SandboxCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

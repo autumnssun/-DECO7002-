@@ -1,0 +1,49 @@
+<div class="section-transitions">
+    <h2>All Transitions</h2>
+    <!--     {{transitions}} -->
+    <div class="et-wrapper et-rotate col-sm-4 " et-out='{{t.leave}}' et-in='{{t.enter}}' ng-repeat="t in transitions track by $index">
+        <div class="et-page ">
+            <h5>In:</h5>
+            {{t.enter}}
+            <h5>Out:</h5>
+            {{t.leave}}
+        </div>
+    </div>
+</div>
+
+<style>
+/*body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    padding: 50px;
+}*/
+
+.et-wrapper {
+    height: 170px  ;
+}
+.et-page {
+    padding: 8px;
+}
+.et-page:nth-child(1) {
+    background: #0ac2d2  ;
+}
+.et-page:nth-child(2) {
+    background: #f68dbb  ;
+}
+.et-page:nth-child(3) {
+    background: #60d7a9  ;
+}
+.et-page:nth-child(4) {
+    background: #fdc162 ;
+}
+.et-page:nth-child(5) {
+    background: #fd6a62 ;
+}
+.code-demos .et-wrapper {
+    margin: 0px ;
+}
+.et-page button.et-rotate {
+    position: relative ;
+    margin-top: 40px ;
+    margin-left: 10px  ;
+}
+</style>

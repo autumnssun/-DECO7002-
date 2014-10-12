@@ -9,6 +9,8 @@
  */
 angular.module('animationProjectApp')
     .controller('MainCtrl', function($scope, $location) {
+        $scope.animationClass = 'pageFade';
+
         $scope.$location = $location;
 
         $scope.items = [];

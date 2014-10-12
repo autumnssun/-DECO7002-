@@ -1,138 +1,130 @@
-.animation {
-    -webkit-transition: 2s ease;
-    transform-origin: 100% 50%;
-    perspective: 500px;
-}
-/*When entering animation starts*/
+/*Page transition styale*/
 
-.animation.ng-enter {
+@import"mixin.scss";
+/*Page fading*/
+
+.pageFade {} .pageFade.ng-enter {
+    /*When entering animation starts*/
+    
     opacity: 0;
-    -webkit-transform: rotateZ(90deg);
+}
+.pageFade.ng-enter.ng-enter-active {
+    /*When entering animation starts*/
+    
+    opacity: 1;
+}
+.pageFade.ng-leave {
+    opacity: 1;
+}
+.pageFade.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+/*Page fading ENDS*/
+
+.pagePushRight {
+    transform-origin: 0% 100%;
+}
+.pagePushRight.ng-enter {
+    /*When entering animation starts*/
+    
+    opacity: 0;
+    left: -100%;
+    -webkit-transform: rotateZ(180deg);
+}
+.pagePushRight.ng-enter-stagger {
+    /*When entering animation starts*/
+    
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.pagePushRight.ng-enter.ng-enter-active {
+    /*When entering animation starts*/
+    
+    -webkit-transform: rotateY(0deg);
+    left: 0;
+    opacity: 1;
+}
+.pagePushRight.ng-leave {
+    opacity: 1;
+}
+.pagePushRight.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+/*add and remove animation style*/
+
+.slideFromRightToLeft {
+    -webkit-transition: 0.7s ease;
 }
 /*When entering animation starts*/
 
-.animation.ng-enter.ng-enter-active {
-    opacity: 1;
-    -webkit-transform: rotateZ(0deg);
+.slideFromRightToLeft.ng-enter {
+    left: 100%;
 }
-.animation.ng-leave {
-    opacity: 1;
+.slideFromRightToLeft.ng-enter.ng-enter-active {
+    left: 0%;
+}
+.slideFromRightToLeft.ng-leave {
+    right: 0;
+}
+.slideFromRightToLeft.ng-leave.ng-leave-active {
+    right: 100%;
+}
+/*END OFadd and remove animation style*/
+/*animmate with hide and show*/
+
+.my-element.ng-hide-add, .my-element.ng-hide-remove {
+    transition: 0.7s ease;
     transform-origin: 0% 50%;
-    -webkit-transform: rotateZ(0deg);
 }
-.animation.ng-leave.ng-leave-active {
+.my-element.ng-hide-add-active, .my-element.ng-hide-remove-active {
+    /* the transition is defined in the active class */
+    
+    transition: 1s ease all;
+}
+.my-element.ng-hide-add {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+}
+.my-element.ng-hide-add.ng-hide-add-active {
     opacity: 0;
-    -webkit-transform: rotateZ(-90deg);
+    -webkit-transform: rotateY(90deg);
 }
-
-
-.slideDown{
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;  
-
-  animation-duration: 1s; 
-  -webkit-animation-duration: 1s;
-
-  animation-timing-function: ease;  
-  -webkit-animation-timing-function: ease;  
-
-  visibility: visible !important;           
+.my-element.ng-hide-remove {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
 }
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  50%{
-    transform: translateY(8%);
-  }
-  65%{
-    transform: translateY(-4%);
-  }
-  80%{
-    transform: translateY(4%);
-  }
-  95%{
-    transform: translateY(-2%);
-  }     
-  100% {
-    transform: translateY(0%);
-  }   
+.my-element.ng-hide-remove.ng-hide-remove-active {
+    /*margin-top: 0;*/
+    
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
 }
+/*slide from top*/
 
-@-webkit-keyframes slideDown {
-  0% {
-    -webkit-transform: translateY(-100%);
-  }
-  50%{
-    -webkit-transform: translateY(8%);
-  }
-  65%{
-    -webkit-transform: translateY(-4%);
-  }
-  80%{
-    -webkit-transform: translateY(4%);
-  }
-  95%{
-    -webkit-transform: translateY(-2%);
-  }     
-  100% {
-    -webkit-transform: translateY(0%);
-  } 
+.classSlideFromTop.ng-hide-add, .classSlideFromTop.ng-hide-remove {
+    transition: 0.7s ease;
+    transform-origin: 0% 0%;
 }
-
-
-.slideUp{
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;  
-
-  animation-duration: 1s; 
-  -webkit-animation-duration: 1s;
-
-  animation-timing-function: ease;  
-  -webkit-animation-timing-function: ease;
-
-  visibility: visible !important;     
+.classSlideFromTop.ng-hide-add-active, .classSlideFromTop.ng-hide-remove-active {
+    /* the transition is defined in the active class */
+    
+    transition: 1s ease all;
 }
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-  }
-  50%{
-    transform: translateY(-8%);
-  }
-  65%{
-    transform: translateY(4%);
-  }
-  80%{
-    transform: translateY(-4%);
-  }
-  95%{
-    transform: translateY(2%);
-  }     
-  100% {
-    transform: translateY(0%);
-  } 
+.classSlideFromTop.ng-hide-add {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
 }
-
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(100%);
-  }
-  50%{
-    -webkit-transform: translateY(-8%);
-  }
-  65%{
-    -webkit-transform: translateY(4%);
-  }
-  80%{
-    -webkit-transform: translateY(-4%);
-  }
-  95%{
-    -webkit-transform: translateY(2%);
-  }     
-  100% {
-    -webkit-transform: translateY(0%);
-  } 
+.classSlideFromTop.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+}
+.classSlideFromTop.ng-hide-remove {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+}
+.classSlideFromTop.ng-hide-remove.ng-hide-remove-active {
+    /*margin-top: 0;*/
+    
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
 }

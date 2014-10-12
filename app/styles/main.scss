@@ -2,28 +2,38 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-/*
- We're using CSS transitions for when
- the enter and move events are triggered
- for the element that has the .repeated-item
- class
-*/
-
-@import "mixin.scss";
-@import "animation.scss";
+@import"mixin.scss";
+@import"animation.scss";
+@import"http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+.navbar {
+    margin-bottom: 1em;
+}
+.pannel {
+    height: 100%;
+    border-right: $blue_a soild 1px;
+}
 .card {
     @include cardview();
+    margin-bottom: $cardMargin;
+    margin-top: $cardMargin;
+    line-height: 1.3em;
     padding: 1em;
-    margin: 1em;
-    margin-bottom: 0;
+    padding-bottom: 0.4em;
+    patientname {
+        font-weight: 800;
+    }
 }
 .color {
     color: $paper;
+    min-height: 500px;
 }
 .blue {
     background-color: $blue_a;
 }
+
+.cursor{
+	cursor: pointer;
+}
 .lightPink {
     background-color: $lightPink;
 }
-

@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <div ng-repeat="patient in patientList" ng-click="loadPaitent(patient)">
+                <div class='card cursor '>
+                    <div class="icon fa fa-arrow-circle-right fa-2x pull-right"></div>
+                    <patientname>{{patient.name}}</patientname>
+                    <p>{{patient.email}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card color blue col-sm-9 {{cardAnimation}}" ng-hide="hideMain">
+            <div class="icon fa fa-chevron-up fa-2x pull-right cursor" ng-click="previousConsultation()"></div>
+            <div class="icon fa fa-chevron-down fa-2x pull-right cursor" ng-click="previousConsultation()"></div>
+            <p class="">
+            {{patientList.selected}}
+            </p>
+        </div>
+    </div>
+</div>
