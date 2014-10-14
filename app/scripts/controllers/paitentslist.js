@@ -99,11 +99,8 @@ angular.module('animationProjectApp')
             $scope.currentPage++;
 
         };
-        $scope.test = function() {
-                //PageTransitions.init();
-            }
-            // $scope.$on('myCustomEvent', function(data) {
-            //     //console.log("data");
-            //     //PageTransitions.init();
-            // });
+
+        $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+            PageTransitions.init();
+        });
     });

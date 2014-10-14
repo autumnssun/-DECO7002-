@@ -30,6 +30,7 @@ var PageTransitions = (function($) {
     animEndEventName = animEndEventNames[getTransitionPrefix()];
 
     function init() {
+        console.log($(".et-page"));
         $(".et-page").each(function() {
             $(this).data('originalClassList', $(this).attr('class'));
         });
@@ -118,7 +119,3 @@ var PageTransitions = (function($) {
         animate: animate
     };
 })(jQuery);
-
-jQuery(function($) {
-    PageTransitions.init();
-});
