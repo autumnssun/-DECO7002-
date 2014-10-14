@@ -50,8 +50,7 @@
         <!--consultation history TODO: add this into a directive-->
         <div class="row">
             <div class="col-md-6">
-                <knob></knob>
-                <!-- <div class="et-wrapper allergies">
+                <div class="et-wrapper allergies">
                     <div class="et-page card" ng-repeat="allergy in patientList.selected.allergies" on-finish-render="test()">
                         <div class="controlGroup ">
                             <div class="et-rotate fa fa-chevron-left " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
@@ -60,11 +59,11 @@
                         <h3>{{allergy.type}}</h3>
                         <p>{{allergy.detail}}</p>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="col-md-6">
 
-                <!-- <div class="et-wrapper medications">
+                <div class="et-wrapper medications">
                     <div class="et-page card">
                         <div class="controlGroup ">
                             <div class="et-rotate fa fa-chevron-left  " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
@@ -72,30 +71,33 @@
                         </div>
                         <h3>Medications</h3>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         <!--Ends of consultation history-->
 
         <!--consultation history TODO: add this into a directive-->
-        <!-- <div class="et-wrapper consultations">
-            <div class="et-page card">
-                <div class="controlGroup">
-                    <div class="et-rotate fa  fa-chevron-down  " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
-                    <div class="et-rotate  fa  fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
-                </div>
-                <h3>{{patientList.selected.history[currentPage].date}}</h3>
+        <div class="row">
+            <div class="et-wrapper consultations">
+                <div class="et-page card">
+                    <div class="controlGroup">
+                        <div class="et-rotate fa  fa-chevron-down  " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
+                        <div class="et-rotate  fa  fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
+                    </div>
+                    <h3>{{patientList.selected.history[currentPage].date}}</h3>
 
-            </div>
-            <div class="et-page card">
-                <div class="controlGroup">
-                    <div class="et-rotate fa fa-chevron-down " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
-                    <div class="et-rotate  fa fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
                 </div>
-                <h3>{{patientList.selected.history[currentPage].date}}</h3>
-                <p></p>
+                <div class="et-page card">
+                    <div class="controlGroup">
+                        <div class="et-rotate fa fa-chevron-down " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
+                        <div class="et-rotate  fa fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
+                    </div>
+                    <h3>{{patientList.selected.history[currentPage].date}}</h3>
+                    <p></p>
+                </div>
             </div>
-        </div> -->
+        </div>
         <!--Ends of consultation history-->
     </div>
 </div>
+<script src='lib/elementify.js'></script>

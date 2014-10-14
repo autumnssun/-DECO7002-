@@ -69,7 +69,7 @@ angular.module('animationProjectApp')
             }];
             $scope.patientList.selected = $scope.patientList[0];
             // $scope.$broadcast('myCustomEvent', data.users);
-            //PageTransitions.init();
+            PageTransitions.init();
         });
 
         $scope.toogle = function() {
@@ -99,11 +99,11 @@ angular.module('animationProjectApp')
             $scope.currentPage++;
 
         };
-        $scope.test=function(){
-            //PageTransitions.init();
-        }
-        // $scope.$on('myCustomEvent', function(data) {
-        //     //console.log("data");
-        //     //PageTransitions.init();
-        // });
+        $scope.test = function() {
+                //PageTransitions.init();
+            }
+            // $scope.$on('myCustomEvent', function(data) {
+            //     //console.log("data");
+            //     //PageTransitions.init();
+            // });
     });

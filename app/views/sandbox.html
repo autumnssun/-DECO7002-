@@ -1,8 +1,11 @@
-<div class="et-wrapper et-rotate span3" et-out='{{t.leave}}' et-in='{{t.enter}}' ng-repeat="t in transitions">
-    <h5>In:</h5>
-    {{t.enter}}
-    <h5>Out:</h5>
-    {{t.leave}}
+<div class="row section-transitions">
+    <h2>All Transitions</h2>
+    <div class="et-wrapper et-rotate span3" et-out='{{t.leave}}' et-in='{{t.enter}}' ng-repeat="t in transitions track by $index">
+        <div class="et-page" ng-repeat="i in getNumber(number) track by $index">
+            <h5>In:</h5>
+            {{t.enter}}
+            <h5>Out:</h5>
+            {{t.leave}}
+        </div>
+    </div>
 </div>
-
-<script src='lib/elementify.js'></script>

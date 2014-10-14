@@ -22,7 +22,6 @@
 .et-page-current, .no-js .et-page {
     visibility: visible;
     z-index: 1;
-    height: auto;
 }
 .no-js body {
     overflow: auto

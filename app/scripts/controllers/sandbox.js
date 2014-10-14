@@ -214,5 +214,4 @@ angular.module('animationProjectApp')
             enter: 'rotateSlideIn'
         }].reverse();
         console.log($scope.transitions);
-        PageTransitions.init();
     });
