@@ -12,14 +12,66 @@
         "status_message": "gym, bbl",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 2,
@@ -34,14 +86,66 @@
         "status_message": "",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 3,
@@ -56,14 +160,66 @@
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 4,
@@ -78,14 +234,66 @@
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 5,
@@ -122,14 +330,66 @@
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 7,
@@ -144,14 +404,66 @@
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }, {
         "user_id": 8,
@@ -166,14 +478,66 @@
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
         "is_deleted": 0,
-        "history": [{
-            "date": "consult 1"
+        "allergies": [{
+            "type": "Peanut",
+            "detail": "Peanut detail"
         }, {
-            "date": "consult 2"
+            "type": "Soy",
+            "detail": "soy detail"
         }, {
-            "date": "consult 3"
+            "type": "Fur",
+            "detail": "soy detail"
+        }],
+        "surgical_history": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
         }, {
-            "date": "consult 4"
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "medications": [{
+            "date": 1315711352,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }, {
+            "date": 1315713342,
+            "list": [{
+                "name": "Panadol",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }]
+        }],
+        "consultation_history": [{
+            "consultation_id": "cslt_1",
+            "date": "consult 1",
+            "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": "consult 2",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": "consult 3",
+            "summary": " This is a summary of this consulation"
         }]
     }]
 }

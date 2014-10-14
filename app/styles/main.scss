@@ -12,6 +12,10 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     height: 100%;
     border-right: $blue_a soild 1px;
 }
+.active{
+    background-color: $blue_a;
+    color: $paper;
+}
 .card {
     @include cardview();
     margin-bottom: $cardMargin;
@@ -48,13 +52,13 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 .allergies, .medications {
     height: 200px;
     .card {
-        height:200px;
+        height:180px;
     }
 }
 .consultations {
     height: 400px;
     .card {
-        height: 400px;
+        height: 380px;
     }
 }
 .controlGroup {
