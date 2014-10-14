@@ -69,7 +69,6 @@ angular.module('animationProjectApp')
             }];
             $scope.patientList.selected = $scope.patientList[0];
             // $scope.$broadcast('myCustomEvent', data.users);
-            PageTransitions.init();
         });
 
         $scope.toogle = function() {

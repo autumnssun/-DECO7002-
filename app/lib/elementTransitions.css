@@ -19,7 +19,7 @@
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d
 }
-.et-page-current, .no-js .et-page {
+.et-page-current, .no-js  {
     visibility: visible;
     z-index: 1;
 }

@@ -32,7 +32,6 @@
             </div>
             <div class="row">
                 <div class="circular col-sm-4"></div>
-
                 <div class="col-sm-4">
                     <label>Email</label>
                     <p>{{patientList.selected.email}}</p>
@@ -51,7 +50,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="et-wrapper allergies">
-                    <div class="et-page card" ng-repeat="allergy in patientList.selected.allergies" on-finish-render >
+                    <div class="et-page card" ng-repeat="allergy in patientList.selected.allergies" on-finish-render>
                         <div class="controlGroup ">
                             <div class="et-rotate fa fa-chevron-left " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
                             <div class="et-rotate fa fa-chevron-right " et-in="rotateCubeRightIn" et-out="rotateCubeRightOut" ng-click="previousAllery()"></div>
@@ -64,6 +63,13 @@
             <div class="col-md-6">
 
                 <div class="et-wrapper medications">
+                    <div class="et-page card">
+                        <div class="controlGroup ">
+                            <div class="et-rotate fa fa-chevron-left  " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
+                            <div class="et-rotate  fa fa-chevron-right " et-in="rotateCubeRightIn" et-out="rotateCubeRightOut" ng-click="previousAllery()"></div>
+                        </div>
+                        <h3>Medications</h3>
+                    </div>
                     <div class="et-page card">
                         <div class="controlGroup ">
                             <div class="et-rotate fa fa-chevron-left  " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
