@@ -9,6 +9,15 @@
  */
 angular.module('animationProjectApp')
     .controller('MainCtrl', function($scope, $location) {
+        $scope.page1 = {
+            'title': 'page'
+        };
+        $scope.page2 = {
+            'title': 'page'
+        };
+        $scope.currentPage = 1;
+
+
         $scope.animationClass = 'pageFade';
 
         $scope.$location = $location;
@@ -31,6 +40,16 @@ angular.module('animationProjectApp')
         };
         $scope.clear = function() {
             $scope.items = [];
+        };
+
+        $scope.currentPage = 1;
+        $scope.next = function() {
+            $scope.currentPage++;
+
+        };
+        $scope.back = function() {
+            $scope.currentPage--;
+
         };
 
     });

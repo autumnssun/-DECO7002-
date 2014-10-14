@@ -13,9 +13,7 @@ angular.module('animationProjectApp')
         $scope.getNumber = function(num) {
             return new Array(num);
         };
-        setInterval(function() {
-            PageTransitions.animate($('.section-transitions .et-wrapper')[Math.floor((Math.random() * 66))])
-        }, 70);
+        
         $scope.transitions = [{
             leave: 'moveToLeft',
             enter: 'moveFromRight'
@@ -216,4 +214,5 @@ angular.module('animationProjectApp')
             enter: 'rotateSlideIn'
         }].reverse();
         console.log($scope.transitions);
+        PageTransitions.init();
     });

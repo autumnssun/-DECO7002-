@@ -30,10 +30,47 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 .blue {
     background-color: $blue_a;
 }
-
-.cursor{
-	cursor: pointer;
+.cursor {
+    cursor: pointer;
 }
 .lightPink {
     background-color: $lightPink;
+}
+.et-page-current {
+    height: 100%;
+    position: relative;
+    clear: both;
+}
+.threeD {
+    -webkit-transform: rotateY(20deg);
+    z-index: 99999;
+}
+.allergies, .medications {
+    height: 200px;
+    .card {
+        height:180px;
+    }
+}
+.consultations {
+    height: 400px;
+    .card {
+        height: 400px;
+    }
+}
+.controlGroup {
+    bottom: 0;
+    float: right;
+    font-size: 1.5em;
+    div {
+        margin-left: 1em;
+    }
+}
+
+.card h3{
+    margin-top: 0;
+}
+.et-page {
+    height: 100%;
+    width: 100%;
+    background-color: $paper;
 }

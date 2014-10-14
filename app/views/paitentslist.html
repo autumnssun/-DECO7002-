@@ -1,20 +1,101 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3">
-            <div ng-repeat="patient in patientList" ng-click="loadPaitent(patient)">
-                <div class='card cursor '>
-                    <div class="icon fa fa-arrow-circle-right fa-2x pull-right"></div>
-                    <patientname>{{patient.name}}</patientname>
-                    <p>{{patient.email}}</p>
+<!-- DO NOT REMOVE THIS CODE NO MATTER WHAT-->
+<!-- <script src='lib/elementTransitions.min.js'></script>
+ -->
+<style>
+.circular {
+    width: 150;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: $paper;
+}
+</style>
+<!-- <knob></knob> -->
+<div class="row">
+    <div class="col-md-3">
+        <div ng-repeat="patient in patientList" ng-click="loadPaitent(patient)">
+            <div class='card cursor '>
+                <div class="icon fa fa-arrow-circle-right fa-2x pull-right"></div>
+                <patientname>{{patient.name}}</patientname>
+                <p>{{patient.email}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9 section-transitions {{cardAnimation}}" ng-hide="hideMain">
+        <div class='card'>
+            <div class="row">
+                <div class="col-sm-8 pull-right">
+                    <h3>Name:{{patientList.selected.name}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="circular col-sm-4"></div>
+
+                <div class="col-sm-4">
+                    <label>Email</label>
+                    <p>{{patientList.selected.email}}</p>
+                    <label>Title</label>
+                    <p>{{patientList.selected.title}}</p>
+                </div>
+                <div class="col-sm-4">
+                    <label>ID</label>
+                    <p>{{patientList.selected.user_id}}</p>
+                    <label>Address</label>
+                    <p>{{patientList.selected.address}}</p>
                 </div>
             </div>
         </div>
-        <div class="card color blue col-sm-9 {{cardAnimation}}" ng-hide="hideMain">
-            <div class="icon fa fa-chevron-up fa-2x pull-right cursor" ng-click="previousConsultation()"></div>
-            <div class="icon fa fa-chevron-down fa-2x pull-right cursor" ng-click="previousConsultation()"></div>
-            <p class="">
-            {{patientList.selected}}
-            </p>
+        <!--consultation history TODO: add this into a directive-->
+        <div class="row">
+            <div class="col-md-6">
+                <knob></knob>
+                <!-- <div class="et-wrapper allergies">
+                    <div class="et-page card" ng-repeat="allergy in patientList.selected.allergies" on-finish-render="test()">
+                        <div class="controlGroup ">
+                            <div class="et-rotate fa fa-chevron-left " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
+                            <div class="et-rotate fa fa-chevron-right " et-in="rotateCubeRightIn" et-out="rotateCubeRightOut" ng-click="previousAllery()"></div>
+                        </div>
+                        <h3>{{allergy.type}}</h3>
+                        <p>{{allergy.detail}}</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-md-6">
+
+                <!-- <div class="et-wrapper medications">
+                    <div class="et-page card">
+                        <div class="controlGroup ">
+                            <div class="et-rotate fa fa-chevron-left  " et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut" ng-click="nextAllery()"></div>
+                            <div class="et-rotate  fa fa-chevron-right " et-in="rotateCubeRightIn" et-out="rotateCubeRightOut" ng-click="previousAllery()"></div>
+                        </div>
+                        <h3>Medications</h3>
+                    </div>
+                </div> -->
+            </div>
         </div>
+        <!--Ends of consultation history-->
+
+        <!--consultation history TODO: add this into a directive-->
+        <!-- <div class="et-wrapper consultations">
+            <div class="et-page card">
+                <div class="controlGroup">
+                    <div class="et-rotate fa  fa-chevron-down  " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
+                    <div class="et-rotate  fa  fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
+                </div>
+                <h3>{{patientList.selected.history[currentPage].date}}</h3>
+
+            </div>
+            <div class="et-page card">
+                <div class="controlGroup">
+                    <div class="et-rotate fa fa-chevron-down " et-in="scaleUp delay0" et-out="scaleDownUp " ng-click="next()"></div>
+                    <div class="et-rotate  fa fa-chevron-up " et-in="scaleUpDown delay0" et-out="scaleDown" ng-click="back()"></div>
+                </div>
+                <h3>{{patientList.selected.history[currentPage].date}}</h3>
+                <p></p>
+            </div>
+        </div> -->
+        <!--Ends of consultation history-->
     </div>
 </div>

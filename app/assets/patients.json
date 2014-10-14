@@ -1,9 +1,9 @@
 {
     "users": [{
         "user_id": 1,
-        "name": "Chris Rivers",
-        "mention_name": "chris",
-        "email": "chris@hipchat.com",
+        "name": "User1",
+        "mention_name": "user1",
+        "email": "user1@email.com",
         "title": "Developer",
         "photo_url": "https:\/\/www.hipchat.com\/chris.png",
         "last_active": 1360031425,
@@ -11,12 +11,21 @@
         "status": "away",
         "status_message": "gym, bbl",
         "is_group_admin": 1,
-        "is_deleted": 0
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
     }, {
-        "user_id": 3,
-        "name": "Peter Curley",
-        "mention_name": "pete",
-        "email": "pete@hipchat.com",
+        "user_id": 2,
+        "name": "user2",
+        "mention_name": "user2",
+        "email": "user2@hipchat.com",
         "title": "Designer",
         "photo_url": "https:\/\/www.hipchat.com\/pete.png",
         "last_active": 1360031425,
@@ -24,7 +33,60 @@
         "status": "offline",
         "status_message": "",
         "is_group_admin": 1,
-        "is_deleted": 0
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
+    }, {
+        "user_id": 3,
+        "name": "Garret Heaton",
+        "mention_name": "garret",
+        "email": "garret@hipchat.com",
+        "title": "Co-founder",
+        "photo_url": "https:\/\/www.hipchat.com\/garret.png",
+        "last_active": 1360031425,
+        "created": 1315711352,
+        "status": "available",
+        "status_message": "Come see what I'm working on!",
+        "is_group_admin": 1,
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
+    }, {
+        "user_id": 4,
+        "name": "Garret Heaton",
+        "mention_name": "garret",
+        "email": "garret@hipchat.com",
+        "title": "Co-founder",
+        "photo_url": "https:\/\/www.hipchat.com\/garret.png",
+        "last_active": 1360031425,
+        "created": 1315711352,
+        "status": "available",
+        "status_message": "Come see what I'm working on!",
+        "is_group_admin": 1,
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
     }, {
         "user_id": 5,
         "name": "Garret Heaton",
@@ -37,6 +99,81 @@
         "status": "available",
         "status_message": "Come see what I'm working on!",
         "is_group_admin": 1,
-        "is_deleted": 0
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
+    }, {
+        "user_id": 6,
+        "name": "Garret Heaton",
+        "mention_name": "garret",
+        "email": "garret@hipchat.com",
+        "title": "Co-founder",
+        "photo_url": "https:\/\/www.hipchat.com\/garret.png",
+        "last_active": 1360031425,
+        "created": 1315711352,
+        "status": "available",
+        "status_message": "Come see what I'm working on!",
+        "is_group_admin": 1,
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
+    }, {
+        "user_id": 7,
+        "name": "Garret Heaton",
+        "mention_name": "garret",
+        "email": "garret@hipchat.com",
+        "title": "Co-founder",
+        "photo_url": "https:\/\/www.hipchat.com\/garret.png",
+        "last_active": 1360031425,
+        "created": 1315711352,
+        "status": "available",
+        "status_message": "Come see what I'm working on!",
+        "is_group_admin": 1,
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
+    }, {
+        "user_id": 8,
+        "name": "Iser 1",
+        "mention_name": "garret",
+        "email": "garret@hipchat.com",
+        "title": "Co-founder",
+        "photo_url": "https:\/\/www.hipchat.com\/garret.png",
+        "last_active": 1360031425,
+        "created": 1315711352,
+        "status": "available",
+        "status_message": "Come see what I'm working on!",
+        "is_group_admin": 1,
+        "is_deleted": 0,
+        "history": [{
+            "date": "consult 1"
+        }, {
+            "date": "consult 2"
+        }, {
+            "date": "consult 3"
+        }, {
+            "date": "consult 4"
+        }]
     }]
 }
