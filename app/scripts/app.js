@@ -23,10 +23,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/page_a', {
-        templateUrl: 'views/page_a.html',
-        controller: 'PageACtrl'
-      })
       .when('/paitentsList', {
         templateUrl: 'views/paitentslist.html',
         controller: 'PaitentslistCtrl'
@@ -39,3 +35,4 @@ angular
         redirectTo: '/'
       });
   });
+

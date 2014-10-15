@@ -10,13 +10,17 @@
 angular.module('animationProjectApp')
     .controller('PaitentslistCtrl', function($scope, $http) {
         //here we define the enter frame animation
+        $scope.currentPage = 0;
+
         $scope.cardAnimation = 'classSlideFromTop';
         $scope.animationClass = 'pagePushRight';
-        $scope.hideMain = true;
+        $scope.hideMain = false;
         $scope.patientList = {};
-        $http.get('assets/patients.json').success(function(data) {
+        var file='assets/patients.json';
+        //var file = 'assets/one_user.json';
+        $http.get(file).success(function(data) {
             $scope.patientList = data.users;
-            console.log($scope.patientList);
+            $scope.patientList.selected = $scope.patientList[0];
         });
 
         $scope.toogle = function() {
@@ -28,13 +32,15 @@ angular.module('animationProjectApp')
             $scope.cardAnimation = 'my-element';
             console.log($scope.hideMain);
             $scope.hideMain = !$scope.hideMain;
-            //$scope.hideMain = false;
         };
         $scope.loadPaitent = function(_patient) {
-            $scope.hideMain=false;
-            console.log(_patient);
-            $scope.patientList.selected =_patient;
+            $scope.currentPage = 0;
+            $scope.hideMain = false;
+            $scope.patientList.selected = _patient;
+
         };
 
-        
+        $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+            PageTransitions.init();
+        });
     });
