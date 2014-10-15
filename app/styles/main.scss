@@ -12,7 +12,7 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     height: 100%;
     border-right: $blue_a soild 1px;
 }
-.active{
+.active {
     background-color: $blue_a;
     color: $paper;
 }
@@ -49,10 +49,14 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     -webkit-transform: rotateY(20deg);
     z-index: 99999;
 }
-.allergies, .medications {
-    height: 200px;
+.allergies, .medications, .bio, .oper {
+    min-height: 200px;
+    margin-bottom: 20px;
     .card {
-        height:180px;
+        min-height: 180px;
+        clear: both;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
 .consultations {
@@ -60,21 +64,63 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     .card {
         height: 380px;
     }
-}
-.controlGroup {
-    bottom: 0;
-    float: right;
-    font-size: 1.5em;
-    div {
-        margin-left: 1em;
+    h3 {
+        color: $blue_b;
     }
 }
-
-.card h3{
+.allergies {
+    h3 {
+        color: $earth;
+    }
+}
+.medications {
+    h3 {
+        color: $blue_b;
+    }
+}
+.oper {
+    h3 {
+        color: $red;
+    }
+}
+.bio {
+    h3 {
+        color: $green;
+    }
+}
+.circular {
+    width: 5em;
+    height: 5em;
+    border: 3px soild $blue_a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50;
+    background: center;
+    background-color: $paper;
+    background-size: 5em auto;
+    margin-right: 1em;
+}
+.paitient hud {
+    font-size: 2em;
+    color: $red;
+    cursor: pointer;
+    div {
+        margin: 0.5em;
+    }
+}
+.controlGroup {
+    top: 1.3em;
+    right: 1em;
+    position: absolute;
+    div {
+        margin-left: 0.7em;
+    }
+}
+.card h3 {
     margin-top: 0;
 }
 .et-page {
     height: 100%;
     width: 100%;
-    background-color: $paper;
+    background-color: $white;
 }

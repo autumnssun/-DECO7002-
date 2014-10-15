@@ -14,7 +14,7 @@ angular.module('animationProjectApp')
 
         $scope.cardAnimation = 'classSlideFromTop';
         $scope.animationClass = 'pagePushRight';
-        $scope.hideMain = true;
+        $scope.hideMain = false;
         $scope.patientList = {};
         var file='assets/patients.json';
         //var file = 'assets/one_user.json';
@@ -32,7 +32,6 @@ angular.module('animationProjectApp')
             $scope.cardAnimation = 'my-element';
             console.log($scope.hideMain);
             $scope.hideMain = !$scope.hideMain;
-            //$scope.hideMain = false;
         };
         $scope.loadPaitent = function(_patient) {
             $scope.currentPage = 0;
