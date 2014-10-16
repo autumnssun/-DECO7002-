@@ -1,6 +1,6 @@
 $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import"bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import"mixin.scss";
 @import"animation.scss";
@@ -25,6 +25,12 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     padding-bottom: 0.4em;
     patientname {
         font-weight: 800;
+    }
+}
+.dropdown-menu{
+    min-width: 300px;
+    li{
+        cursor: pointer;
     }
 }
 .color {
@@ -72,6 +78,13 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     h3 {
         color: $earth;
     }
+    .badge {
+        background-color: $earth;
+        font-weight: 500;
+        margin-right: 0.2em;
+        padding-right: 0.7em;
+        padding-left: 0.7em;
+    }
 }
 .medications {
     h3 {
@@ -99,13 +112,17 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     background-color: $paper;
     background-size: 5em auto;
     margin-right: 1em;
+    margin-bottom: 1em;
 }
-.paitient hud {
-    font-size: 2em;
-    color: $red;
-    cursor: pointer;
-    div {
-        margin: 0.5em;
+.paitient {
+    background-color: $paper;
+    hud {
+        font-size: 2em;
+        color: $red;
+        cursor: pointer;
+        div {
+            margin: 0.5em;
+        }
     }
 }
 .controlGroup {
@@ -113,9 +130,17 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     right: 1em;
     position: absolute;
     div {
-        margin-left: 0.7em;
+        width: 1.5em;
+        height: auto;
+        display: inline-block;
+    }
+    .hidden {
+        width: 1em;
+        height: 1em;
+        visibility: hidden;
     }
 }
+
 .card h3 {
     margin-top: 0;
 }
