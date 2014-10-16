@@ -19,17 +19,62 @@
             "detail": "soy detail"
         }],
         "bio_mesurements": [{
-            "measure": "Blood Presure",
-            "value": "117/76 mmHg"
+            "type":"Blood Pressure",
+            "vals": [{
+                "date": 624390241000,
+                "value": "117/76   "
+            }, {
+                "date": 625392241000,
+                "value": "117/76   "
+            },{
+                "date": 625324241000,
+                "value": "117/76   "
+            },{
+                "date": 625390441000,
+                "value": "117/76   "
+            },{
+                "date": 625390641000,
+                "value": "117/76   "
+            }]
         }, {
-            "measure": "Blood Glucose (Before meals)",
-            "value": "4.4 mmol/L"
+            "type":"Blood Glucose",
+            "vals":[{
+                "date": 625391241000,
+                "value": "4.4 "
+            },{
+                "date": 625393241000,
+                "value": "4.4 "
+            },{
+                "date": 623393241000,
+                "value": "4.4 "
+            },{
+                "date": 625393251000,
+                "value": "4.4 "
+            },{
+                "date": 625393246000,
+                "value": "4.4 "
+            }, {
+                "date": 625394241000,
+                "value": "4.4 "
+            }]
         }, {
-            "measure": "Height",
-            "value": "176 cm"
+            "type":"Height",
+            "vals": [{
+                "date": 625393241000,
+                "value": "173 cm"
+            }, {
+                "date": 625394241000,
+                "value": "173 cm"
+            }]
         }, {
-            "measure": "Weight",
-            "value": "76 Kg"
+            "type":"Weight",
+            "vals": [{
+                "date": 625323241000,
+                "value": "94 KG"
+            }, {
+                "date": 625394241000,
+                "value": "44 KG"
+            }]
         }],
         "operation_history": [{
             "date": 1381754365000,
@@ -62,6 +107,21 @@
                 "name": "Paracetanon",
                 "dose": "3 tbl/day"
             }]
+        },{
+            "date": 1315711352000,
+            "list": [{
+                "name": "Zinnat",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Zinnat",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Paracetanon",
+                "dose": "3 tbl/day"
+            }, {
+                "name": "Zinnat",
+                "dose": "3 tbl/day"
+            }]
         }],
         "consultation_history": [{
             "consultation_id": "cslt_1",
@@ -70,6 +130,76 @@
             "diagnose": "This is a diagnose",
             "treatment": "Treatment",
             "summary": " This is a summary of this consultation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": 1405256746000,
+            "doctor": "Dr Who",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": 1410613546000,
+            "doctor": "Dr Betty Smith",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": 1405256746000,
+            "doctor": "Dr Who",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": 1410613546000,
+            "doctor": "Dr Betty Smith",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": 1405256746000,
+            "doctor": "Dr Who",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": 1410613546000,
+            "doctor": "Dr Betty Smith",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": 1405256746000,
+            "doctor": "Dr Who",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": 1410613546000,
+            "doctor": "Dr Betty Smith",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_2",
+            "date": 1405256746000,
+            "doctor": "Dr Who",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
+        }, {
+            "consultation_id": "cslt_3",
+            "date": 1410613546000,
+            "doctor": "Dr Betty Smith",
+            "diagnose": "",
+            "treatment": "This is a diagnose",
+            "summary": " This is a summary of this consulation"
         }, {
             "consultation_id": "cslt_2",
             "date": 1405256746000,
@@ -106,10 +236,10 @@
         }],
         "bio_mesurements": [{
             "measure": "Blood Presure",
-            "value": "117/76 mmHg"
+            "value": "117/76   "
         }, {
             "measure": "Blood Glucose (Before meals)",
-            "value": "4.4 mmol/L"
+            "value": "4.4 "
         }, {
             "measure": "Height",
             "value": "176 cm"

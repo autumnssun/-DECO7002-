@@ -1,6 +1,6 @@
 $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import"bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import"mixin.scss";
 @import"animation.scss";
@@ -16,6 +16,14 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     background-color: $blue_a;
     color: $paper;
 }
+.card_style {
+    @include cardview();
+    padding: 1em;
+    height: 110px;
+}
+.fa{
+    cursor: pointer;
+}
 .card {
     @include cardview();
     margin-bottom: $cardMargin;
@@ -27,9 +35,9 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
         font-weight: 800;
     }
 }
-.dropdown-menu{
+.dropdown-menu {
     min-width: 300px;
-    li{
+    li {
         cursor: pointer;
     }
 }
@@ -71,7 +79,7 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
         height: 380px;
     }
     h3 {
-        color: $blue_b;
+        color: $yellow;
     }
 }
 .allergies {
@@ -99,6 +107,15 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 .bio {
     h3 {
         color: $green;
+    }
+    h4 {
+        color: $red;
+    }
+    biovalue {
+        font-size: 3.4em;
+        font-weight: 500;
+        color: $red;
+        line-height: 1.4em;
     }
 }
 .circular {
@@ -130,7 +147,7 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     right: 1em;
     position: absolute;
     div {
-        width: 1.5em;
+        width: 1em;
         height: auto;
         display: inline-block;
     }
@@ -140,9 +157,12 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
         visibility: hidden;
     }
 }
-
 .card h3 {
     margin-top: 0;
+}
+.hightlight {
+    color: $red;
+    font-weight: 600;
 }
 .et-page {
     height: 100%;
