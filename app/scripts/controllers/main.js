@@ -8,48 +8,64 @@
  * Controller of the animationProjectApp
  */
 angular.module('animationProjectApp')
-    .controller('MainCtrl', function($scope, $location) {
-        $scope.page1 = {
-            'title': 'page'
-        };
-        $scope.page2 = {
-            'title': 'page'
-        };
-        $scope.currentPage = 1;
+    .controller('MainCtrl', function($scope) {
+        $scope.currentPage = 0;
+        $scope.medata = [{
+            'key': 'Series 1',
+            'values': [
+                [1025409600000, 0],
+                [1028088000000, -6.3],
+                [1030766400000, -5.4],
+                [1033358400000, -11.5],
+                [1036040400000, -5.2],
+                [1038632400000, 0.42]
+            ]
+        },{
+            'key': 'Series 2',
+            'values': [
+                [1025409600000, 0],
+                [1028088000000, 6.42],
+                [1030766400000, 5.31],
+                [1033358400000, 11.32],
+                [1036040400000, 5.4],
+                [1038632400000, 42.53]
+            ]
+        }];
 
+        $scope.cardAnimation = 'classSlideFromTop';
+        $scope.animationClass = 'pagePushRight';
+        $scope.hideMain = false;
+        $scope.patientList = {};
+        var file = 'assets/patients.json';
+        //var file = 'assets/one_user.json';
+        $http.get(file).success(function(data) {
+            $scope.patientList = data.users;
+            $scope.patientList.selected = $scope.patientList[0];
+        });
 
-        $scope.animationClass = 'pageFade';
-
-        $scope.$location = $location;
-
-        $scope.items = [];
-
-        $scope.push = function() {
-            $scope.items.push(+new Date());
-        };
-
-        $scope.pop = function() {
-            $scope.items.pop();
-        };
-        $scope.addHeap = function() {
-            console.log('d');
-            for (var i = 0; i < 20; i++) {
-                $scope.items.push(+new Date() + i);
-                console.log($scope.items);
-            }
-        };
-        $scope.clear = function() {
-            $scope.items = [];
-        };
-
-        $scope.currentPage = 1;
-        $scope.next = function() {
-            $scope.currentPage++;
-
-        };
-        $scope.back = function() {
-            $scope.currentPage--;
-
+        $scope.toogle = function() {
+            $scope.hideMain = !$scope.hideMain;
+            console.log($scope.hideMain);
         };
 
+        $scope.previousConsultation = function() {
+            $scope.cardAnimation = 'my-element';
+            console.log($scope.hideMain);
+            $scope.hideMain = !$scope.hideMain;
+        };
+        $scope.loadPaitent = function(_patient) {
+            $scope.currentPage = 0;
+            $scope.hideMain = false;
+            $scope.patientList.selected = _patient;
+
+        };
+        $scope.xAxisTickFormatFunction = function() {
+            return function(d) {
+                return d3.time.format('%b')(new Date(d));
+            };
+        };
+
+        $scope.$on('ngRepeatFinished', function() {
+            PageTransitions.init();
+        });
     });

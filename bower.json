@@ -13,7 +13,14 @@
     "angular-touch": "~1.2.0",
     "angular-route": "~1.2.0",
     "ngFx": "~1.0.4",
-    "jquery-knob": "~1.2.11"
+    "jquery-knob": "~1.2.11",
+    "d3": "~3.4.13",
+    "nvd3": "~1.1.15-beta",
+    "angularjs-nvd3-directives": "~0.0.7",
+    "angular-filter": "~0.4.9",
+    "angular-ui-select": "~0.8.3",
+    "select2": "~3.4.5",
+    "selectize": "~0.8.5"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0",

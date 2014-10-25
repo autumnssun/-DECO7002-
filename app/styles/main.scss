@@ -21,7 +21,7 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     padding: 1em;
     height: 110px;
 }
-.fa{
+.fa {
     cursor: pointer;
 }
 .card {
@@ -36,7 +36,8 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     }
 }
 .dropdown-menu {
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 300px;
     li {
         cursor: pointer;
     }
@@ -75,6 +76,9 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 }
 .consultations {
     height: 400px;
+    *.dropdown-menu {
+        width: 300px;
+    }
     .card {
         height: 380px;
     }
@@ -143,10 +147,13 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     }
 }
 .controlGroup {
-    top: 1.3em;
+    top: 1em;
     right: 1em;
+    font-size: 1.1em;
     position: absolute;
     div {
+        cursor: pointer;
+        margin: 0.5em;
         width: 1em;
         height: auto;
         display: inline-block;
@@ -154,7 +161,9 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     .hidden {
         width: 1em;
         height: 1em;
-        visibility: hidden;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        /* For IE8 and earlier */
     }
 }
 .card h3 {
@@ -168,4 +177,8 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
     height: 100%;
     width: 100%;
     background-color: $white;
+}
+.card_scroll {
+    height: 280px;
+    overflow-x: scroll;
 }

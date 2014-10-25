@@ -15,13 +15,18 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'nvd3ChartDirectives',
+    'angular.filter',
+    'ui.select'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,uiSelectConfig) {
+    uiSelectConfig.theme = 'select2';
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'PaitentslistCtrl'
+        //controller: 'MainCtrl'
       })
       .when('/paitentsList', {
         templateUrl: 'views/paitentslist.html',

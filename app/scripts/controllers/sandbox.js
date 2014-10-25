@@ -36,11 +36,10 @@ angular.module('animationProjectApp')
             $scope.currentPage = 0;
             $scope.hideMain = false;
             $scope.patientList.selected = _patient;
-
         };
 
 
-        $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
-            PageTransitions.init();
+        $scope.$on('ngRepeatFinished', function() {
+            //PageTransitions.init();
         });
     });

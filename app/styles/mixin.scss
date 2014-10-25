@@ -7,11 +7,9 @@ $red:#ff3c67;
 $green:#4bc145;
 $white:#ffffff;
 $paper:#f2f2f2;
-
 $cardMargin:0.5em;
 $cardHeight:10em;
 $showdowcolor:rgba(100, 100, 100, 0.5);
-
 @mixin shadow_1() {
     $shadows: 0px 0px 4px 3px $showdowcolor;
     -moz-box-shadow: $shadows;
@@ -44,4 +42,6 @@ $showdowcolor:rgba(100, 100, 100, 0.5);
     @include border_radius(50%);
     overflow: hidden;
 }
-
+.cardview {
+    @include cardview();
+}
