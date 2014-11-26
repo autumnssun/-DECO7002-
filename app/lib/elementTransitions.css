@@ -79,69 +79,69 @@
 }
 
 .pt-page-fade7 {
-    -webkit-animation: fade .7s ease both;
-    -moz-animation: fade .7s ease both;
-    animation: fade .7s ease both
+    -webkit-animation: fade 0.25s ease both;
+    -moz-animation: fade 0.25s ease both;
+    animation: fade 0.25s ease both
 }
 .pt-page-moveToLeftFade {
-    -webkit-animation: moveToLeftFade .7s ease both;
-    -moz-animation: moveToLeftFade .7s ease both;
-    animation: moveToLeftFade .7s ease both
+    -webkit-animation: moveToLeftFade 0.25s ease both;
+    -moz-animation: moveToLeftFade 0.25s ease both;
+    animation: moveToLeftFade 0.25s ease both
 }
 .pt-page-moveFromLeftFade {
-    -webkit-animation: moveFromLeftFade .7s ease both;
-    -moz-animation: moveFromLeftFade .7s ease both;
-    animation: moveFromLeftFade .7s ease both
+    -webkit-animation: moveFromLeftFade 0.25s ease both;
+    -moz-animation: moveFromLeftFade 0.25s ease both;
+    animation: moveFromLeftFade 0.25s ease both
 }
 .pt-page-moveToRightFade {
-    -webkit-animation: moveToRightFade .7s ease both;
-    -moz-animation: moveToRightFade .7s ease both;
-    animation: moveToRightFade .7s ease both
+    -webkit-animation: moveToRightFade 0.25s ease both;
+    -moz-animation: moveToRightFade 0.25s ease both;
+    animation: moveToRightFade 0.25s ease both
 }
 .pt-page-moveFromRightFade {
-    -webkit-animation: moveFromRightFade .7s ease both;
-    -moz-animation: moveFromRightFade .7s ease both;
-    animation: moveFromRightFade .7s ease both
+    -webkit-animation: moveFromRightFade 0.25s ease both;
+    -moz-animation: moveFromRightFade 0.25s ease both;
+    animation: moveFromRightFade 0.25s ease both
 }
 .pt-page-moveToTopFade {
-    -webkit-animation: moveToTopFade .7s ease both;
-    -moz-animation: moveToTopFade .7s ease both;
-    animation: moveToTopFade .7s ease both
+    -webkit-animation: moveToTopFade 0.25s ease both;
+    -moz-animation: moveToTopFade 0.25s ease both;
+    animation: moveToTopFade 0.25s ease both
 }
 .pt-page-moveFromTopFade {
-    -webkit-animation: moveFromTopFade .7s ease both;
-    -moz-animation: moveFromTopFade .7s ease both;
-    animation: moveFromTopFade .7s ease both
+    -webkit-animation: moveFromTopFade 0.25s ease both;
+    -moz-animation: moveFromTopFade 0.25s ease both;
+    animation: moveFromTopFade 0.25s ease both
 }
 .pt-page-moveToBottomFade {
-    -webkit-animation: moveToBottomFade .7s ease both;
-    -moz-animation: moveToBottomFade .7s ease both;
-    animation: moveToBottomFade .7s ease both
+    -webkit-animation: moveToBottomFade 0.25s ease both;
+    -moz-animation: moveToBottomFade 0.25s ease both;
+    animation: moveToBottomFade 0.25s ease both
 }
 .pt-page-moveFromBottomFade {
-    -webkit-animation: moveFromBottomFade .7s ease both;
-    -moz-animation: moveFromBottomFade .7s ease both;
-    animation: moveFromBottomFade .7s ease both
+    -webkit-animation: moveFromBottomFade 0.25s ease both;
+    -moz-animation: moveFromBottomFade 0.25s ease both;
+    animation: moveFromBottomFade 0.25s ease both
 }
 .pt-page-moveToLeftEasing {
-    -webkit-animation: moveToLeft .7s ease-in-out both;
-    -moz-animation: moveToLeft .7s ease-in-out both;
-    animation: moveToLeft .7s ease-in-out both
+    -webkit-animation: moveToLeft 0.25s ease-in-out both;
+    -moz-animation: moveToLeft 0.25s ease-in-out both;
+    animation: moveToLeft 0.25s ease-in-out both
 }
 .pt-page-moveToRightEasing {
-    -webkit-animation: moveToRight .7s ease-in-out both;
-    -moz-animation: moveToRight .7s ease-in-out both;
-    animation: moveToRight .7s ease-in-out both
+    -webkit-animation: moveToRight 0.25s ease-in-out both;
+    -moz-animation: moveToRight 0.25s ease-in-out both;
+    animation: moveToRight 0.25s ease-in-out both
 }
 .pt-page-moveToTopEasing {
-    -webkit-animation: moveToTop .7s ease-in-out both;
-    -moz-animation: moveToTop .7s ease-in-out both;
-    animation: moveToTop .7s ease-in-out both
+    -webkit-animation: moveToTop 0.25s ease-in-out both;
+    -moz-animation: moveToTop 0.25s ease-in-out both;
+    animation: moveToTop 0.25s ease-in-out both
 }
 .pt-page-moveToBottomEasing {
-    -webkit-animation: moveToBottom .7s ease-in-out both;
-    -moz-animation: moveToBottom .7s ease-in-out both;
-    animation: moveToBottom .7s ease-in-out both
+    -webkit-animation: moveToBottom 0.25s ease-in-out both;
+    -moz-animation: moveToBottom 0.25s ease-in-out both;
+    animation: moveToBottom 0.25s ease-in-out both
 }
 @-webkit-keyframes moveToLeft {
     to {
@@ -423,14 +423,14 @@
     }
 }
 .pt-page-scaleDown {
-    -webkit-animation: scaleDown .7s ease both;
-    -moz-animation: scaleDown .7s ease both;
-    animation: scaleDown .7s ease both
+    -webkit-animation: scaleDown 0.25s ease both;
+    -moz-animation: scaleDown 0.25s ease both;
+    animation: scaleDown 0.25s ease both
 }
 .pt-page-scaleUp {
-    -webkit-animation: scaleUp .7s ease both;
-    -moz-animation: scaleUp .7s ease both;
-    animation: scaleUp .7s ease both
+    -webkit-animation: scaleUp 0.25s ease both;
+    -moz-animation: scaleUp 0.25s ease both;
+    animation: scaleUp 0.25s ease both
 }
 .pt-page-scaleUpDown {
     -webkit-animation: scaleUpDown .5s ease both;
@@ -746,67 +746,67 @@
 }
 .pt-page-rotateFoldRight {
     -webkit-transform-origin: 0 50%;
-    -webkit-animation: rotateFoldRight .7s both ease;
+    -webkit-animation: rotateFoldRight 0.25s both ease;
     -moz-transform-origin: 0 50%;
-    -moz-animation: rotateFoldRight .7s both ease;
+    -moz-animation: rotateFoldRight 0.25s both ease;
     transform-origin: 0 50%;
-    animation: rotateFoldRight .7s both ease
+    animation: rotateFoldRight 0.25s both ease
 }
 .pt-page-rotateFoldLeft {
     -webkit-transform-origin: 100% 50%;
-    -webkit-animation: rotateFoldLeft .7s both ease;
+    -webkit-animation: rotateFoldLeft 0.25s both ease;
     -moz-transform-origin: 100% 50%;
-    -moz-animation: rotateFoldLeft .7s both ease;
+    -moz-animation: rotateFoldLeft 0.25s both ease;
     transform-origin: 100% 50%;
-    animation: rotateFoldLeft .7s both ease
+    animation: rotateFoldLeft 0.25s both ease
 }
 .pt-page-rotateFoldTop {
     -webkit-transform-origin: 50% 100%;
-    -webkit-animation: rotateFoldTop .7s both ease;
+    -webkit-animation: rotateFoldTop 0.25s both ease;
     -moz-transform-origin: 50% 100%;
-    -moz-animation: rotateFoldTop .7s both ease;
+    -moz-animation: rotateFoldTop 0.25s both ease;
     transform-origin: 50% 100%;
-    animation: rotateFoldTop .7s both ease
+    animation: rotateFoldTop 0.25s both ease
 }
 .pt-page-rotateFoldBottom {
     -webkit-transform-origin: 50% 0;
-    -webkit-animation: rotateFoldBottom .7s both ease;
+    -webkit-animation: rotateFoldBottom 0.25s both ease;
     -moz-transform-origin: 50% 0;
-    -moz-animation: rotateFoldBottom .7s both ease;
+    -moz-animation: rotateFoldBottom 0.25s both ease;
     transform-origin: 50% 0;
-    animation: rotateFoldBottom .7s both ease
+    animation: rotateFoldBottom 0.25s both ease
 }
 .pt-page-rotateUnfoldLeft {
     -webkit-transform-origin: 100% 50%;
-    -webkit-animation: rotateUnfoldLeft .7s both ease;
+    -webkit-animation: rotateUnfoldLeft 0.25s both ease;
     -moz-transform-origin: 100% 50%;
-    -moz-animation: rotateUnfoldLeft .7s both ease;
+    -moz-animation: rotateUnfoldLeft 0.25s both ease;
     transform-origin: 100% 50%;
-    animation: rotateUnfoldLeft .7s both ease
+    animation: rotateUnfoldLeft 0.25s both ease
 }
 .pt-page-rotateUnfoldRight {
     -webkit-transform-origin: 0 50%;
-    -webkit-animation: rotateUnfoldRight .7s both ease;
+    -webkit-animation: rotateUnfoldRight 0.25s both ease;
     -moz-transform-origin: 0 50%;
-    -moz-animation: rotateUnfoldRight .7s both ease;
+    -moz-animation: rotateUnfoldRight 0.25s both ease;
     transform-origin: 0 50%;
-    animation: rotateUnfoldRight .7s both ease
+    animation: rotateUnfoldRight 0.25s both ease
 }
 .pt-page-rotateUnfoldTop {
     -webkit-transform-origin: 50% 100%;
-    -webkit-animation: rotateUnfoldTop .7s both ease;
+    -webkit-animation: rotateUnfoldTop 0.25s both ease;
     -moz-transform-origin: 50% 100%;
-    -moz-animation: rotateUnfoldTop .7s both ease;
+    -moz-animation: rotateUnfoldTop 0.25s both ease;
     transform-origin: 50% 100%;
-    animation: rotateUnfoldTop .7s both ease
+    animation: rotateUnfoldTop 0.25s both ease
 }
 .pt-page-rotateUnfoldBottom {
     -webkit-transform-origin: 50% 0;
-    -webkit-animation: rotateUnfoldBottom .7s both ease;
+    -webkit-animation: rotateUnfoldBottom 0.25s both ease;
     -moz-transform-origin: 50% 0;
-    -moz-animation: rotateUnfoldBottom .7s both ease;
+    -moz-animation: rotateUnfoldBottom 0.25s both ease;
     transform-origin: 50% 0;
-    animation: rotateUnfoldBottom .7s both ease
+    animation: rotateUnfoldBottom 0.25s both ease
 }
 .pt-page-rotateRoomLeftOut {
     -webkit-transform-origin: 100% 50%;
@@ -2359,9 +2359,9 @@
     animation-delay: .5s
 }
 .pt-page-delay700 {
-    -webkit-animation-delay: .7s;
-    -moz-animation-delay: .7s;
-    animation-delay: .7s
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s
 }
 .pt-page-delay1000 {
     -webkit-animation-delay: 1s;

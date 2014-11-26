@@ -8,6 +8,19 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 .navbar {
     margin-bottom: 1em;
 }
+.controlGroup {
+    color: $blue_a;
+    @include textShadow(1px);
+    i{
+        padding: 7px;
+        border:solid $blue_a 1px;
+        border-radius: 3px;
+    }
+    i:hover{
+        color: white;
+        background-color: $blue_a;
+    };
+}
 .pannel {
     height: 100%;
     border-right: $blue_a soild 1px;
@@ -88,7 +101,7 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 }
 .allergies {
     h3 {
-        color: $earth;
+        /*color: $earth;*/
     }
     .badge {
         background-color: $earth;
@@ -100,25 +113,25 @@ $icon-font-path:"../bower_components/bootstrap-sass-official/assets/fonts/bootst
 }
 .medications {
     h3 {
-        color: $blue_b;
+        /*color: $blue_b;*/
     }
 }
 .oper {
     h3 {
-        color: $red;
+        /*color: $red;*/
     }
 }
 .bio {
     h3 {
-        color: $green;
+        /*color: $green;*/
     }
     h4 {
-        color: $red;
+        color: $green;
     }
     biovalue {
         font-size: 3.4em;
         font-weight: 500;
-        color: $red;
+        color: $green;
         line-height: 1.4em;
     }
 }

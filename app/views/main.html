@@ -67,10 +67,10 @@
                 <div class="et-wrapper medications">
                     <div class="et-page card" ng-repeat="med in patientList.selected.medications">
                         <div class="controlGroup ">
-                            <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div>
+                            <!-- <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div> -->
                             <ul class="dropdown-menu pull-right" role="menu">
                                 <li ng-repeat="al in patientList.selected.medications">
-                                    <a class='et-to' et-to-data="{{$index}}" et-out="fade" et-in="fade">
+                                    <a class='et-to' et-to-data="{{$index}}" et-out="rotateSlideIn" et-in="rotateFall">
                                 {{al.date| date:'fullDate'}}
                                 </a>
                                 </li>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <h3>Medication</h3>
-                        <h4>{{med.date| date:'fullDate'}}</h4>
+                        <h4>{{med.date| date:'fullDate'}} - by {{med.scribribedBy}}</h4>
                         <ul class="list-group">
                             <li class="list-group-item" ng-repeat="m in med.list">
                                 {{m.name}}
@@ -98,17 +98,17 @@
                 <div class="et-wrapper bio">
                     <div class="et-page card" ng-repeat="value in patientList.selected.bio_mesurements">
                         <div class="controlGroup ">
-                            <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div>
+                            <!-- <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div> -->
                             <ul class="dropdown-menu pull-right" role="menu">
                                 <li ng-repeat="al in patientList.selected.bio_mesurements">
-                                    <a class='et-to' et-to-data="{{$index}}" et-out="fade" et-in="fade ">
+                                    <a class='et-to' et-to-data="{{$index}}" et-out="fade" et-in="fade">
                                 {{al.type}}
                                 </a>
                                 </li>
                             </ul>
-                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-left" et-in="fade " et-out="fade"></i>
+                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-left" et-in="fade" et-out="fade"></i>
                             </div>
-                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-right" et-in="fade " et-out="fade"></i>
+                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-right" et-in="fade" et-out="fade"></i>
                             </div>
                         </div>
                         <h3>Bio Mesurements</h3>
@@ -117,17 +117,17 @@
                             <div class="et-page  " ng-repeat="v in value.vals">
 
                                 <div class="controlGroup ">
-                                    <div class="fa-bars fa dropdown-toggle" data-toggle="dropdown"></div>
+                                    <!-- <div class="fa-bars fa dropdown-toggle" data-toggle="dropdown"></div> -->
                                     <ul class="dropdown-menu pull-right" role="menu">
                                         <li ng-repeat="al in value.vals">
-                                            <a class='et-to' et-to-data="{{$index}}" et-out="fade" et-in="fade">
-                                            {{v.date|date:'fullDate'}}
+                                            <a class='et-to' et-to-data="{{$index}}" et-out="scaleDownUp" et-in="scaleUpDown opTop">
+                                            {{al.date|date:'fullDate'}}
                                             </a>
                                         </li>
                                     </ul>
-                                    <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade" et-out="fade"></i>
+                                    <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade " et-out="fade"></i>
                                     </div>
-                                    <div><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="fade" et-out="fade"></i>
+                                    <div><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="fade " et-out="fade"></i>
                                     </div>
                                 </div>
                                 <div class="card_style">
@@ -147,21 +147,21 @@
                 <div class="et-wrapper oper">
                     <div class="et-page card" ng-repeat="operhx in patientList.selected.operation_history">
                         <div class="controlGroup ">
-                            <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div>
+                            <!-- <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div> -->
                             <ul class="dropdown-menu pull-right" role="menu">
                                 <li ng-repeat="al in patientList.selected.operation_history">
-                                    <a class='et-to' ng-class='{active:$index===patientList.selected.operation_history.current}' et-to-data="{{$index}}" et-in="fade" et-out="fade" ng-click="patientList.selected.operation_history.current={{$index}}">
+                                    <a class='et-to' ng-class='{active:$index===patientList.selected.operation_history.current}' et-to-data="{{$index}}" et-in="scaleUp delay200" et-out="scaleDownUp" ng-click="patientList.selected.operation_history.current={{$index}}">
                                     {{al.operation}}
                                     </a>
                                 </li>
                             </ul>
-                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade " et-out="fade"></i>
+                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade" et-out="fade"></i>
                             </div>
-                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="fade " et-out="fade"></i>
+                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="fade" et-out="fade"></i>
                             </div>
                         </div>
                         <h3>{{operhx.operation}}</h3>
-                        <h6>{{operhx.date| date:'fullDate'}}</h6>
+                        <h4>{{operhx.date| date:'fullDate'}}</h4>
                         <p>{{operhx.details}}</p>
                     </div>
                 </div>
@@ -173,16 +173,16 @@
             <!--CONSULTATION INFORMATION-->
             <div class="et-page card" ng-repeat="con in patientList.selected.consultation_history" on-finish-render>
                 <div class="controlGroup">
-                    <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div>
+                    <!-- <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div> -->
                     <ul class="dropdown-menu pull-right" role="menu">
                         <li ng-repeat="al in patientList.selected.consultation_history " style="width:300px;">
-                            <a class='et-to' ng-class='{active:$index===patientList.selected.consultation_history.current}' et-to-data="{{$index}}" ng-click="patientList.selected.consultation_history.current={{$index}}" et-in="fade " et-out="fade ">
+                            <a class='et-to' ng-class='{active:$index===patientList.selected.consultation_history.current}' et-to-data="{{$index}}" ng-click="patientList.selected.consultation_history.current={{$index}}" et-in="scaleUp delay0" et-out="scaleDownUp ">
                                 <span class="pull-left">{{al.doctor}}</span>-
                                 <span class='pull-right'>{{al.date | date:'fullDate'}}</span>
                             </a>
                         </li>
                     </ul>
-                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade " et-out="fade"></i>
+                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="fade" et-out="fade"></i>
                     </div>
                     <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-down" et-in="fade" et-out="fade"></i>
                     </div>

@@ -48,8 +48,8 @@
                     <p>{{patientList.selected.address}}</p>
                 </div>
             </div>
-<!--             <nvd3-line-chart data="medata" showXAxis="true" height="300" showYAxis="true" tooltips="true" class="haha" xAxisTickFormat="xAxisTickFormatFunction()" interactive="true" />
- -->
+                        <nvd3-line-chart data="medata" showXAxis="true" height="300" showYAxis="true" tooltips="true" class="haha" xAxisTickFormat="xAxisTickFormatFunction()" interactive="true" />
+
         </div>
         <div class="row" ng-show='patientList.selected.allergies||patientList.selected.medications'>
             <!--ALLERGIES INFORMATION-->
@@ -75,13 +75,13 @@
                                 </a>
                                 </li>
                             </ul>
-                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay0" et-out="scaleDownUp"></i>
+                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay400" et-out="scaleDownUp"></i>
                             </div>
-                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-down" et-in="scaleUpDown delay0" et-out="scaleDown"></i>
+                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-down" et-in="scaleUpDown delay400" et-out="scaleDown"></i>
                             </div>
                         </div>
                         <h3>Medication</h3>
-                        <h4>{{med.date| date:'fullDate'}}  - by {{med.scribribedBy}}</h4>
+                        <h4>{{med.date| date:'fullDate'}} - by {{med.scribribedBy}}</h4>
                         <ul class="list-group">
                             <li class="list-group-item" ng-repeat="m in med.list">
                                 {{m.name}}
@@ -106,9 +106,9 @@
                                 </a>
                                 </li>
                             </ul>
-                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-left" et-in="rotateCubeLeftIn delay00" et-out="rotateCubeLeftOut"></i>
+                            <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-left" et-in="rotateCubeLeftIn" et-out="rotateCubeLeftOut"></i>
                             </div>
-                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-right" et-in="rotateCubeRightIn delay00" et-out="rotateCubeRightOut"></i>
+                            <div><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-right" et-in="rotateCubeRightIn" et-out="rotateCubeRightOut"></i>
                             </div>
                         </div>
                         <h3>Bio Mesurements</h3>
@@ -125,9 +125,9 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay500" et-out="scaleDownUp"></i>
+                                    <div><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay400" et-out="scaleDownUp"></i>
                                     </div>
-                                    <div><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="scaleUpDown delay500" et-out="scaleDown"></i>
+                                    <div><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="scaleUpDown delay400" et-out="scaleDown"></i>
                                     </div>
                                 </div>
                                 <div class="card_style">
@@ -150,18 +150,18 @@
                             <div class=" fa-list fa dropdown-toggle" data-toggle="dropdown"></div>
                             <ul class="dropdown-menu pull-right" role="menu">
                                 <li ng-repeat="al in patientList.selected.operation_history">
-                                    <a class='et-to' ng-class='{active:$index===patientList.selected.operation_history.current}' et-to-data="{{$index}}" et-in="scaleUp delay0" et-out="scaleDownUp" ng-click="patientList.selected.operation_history.current={{$index}}">
+                                    <a class='et-to' ng-class='{active:$index===patientList.selected.operation_history.current}' et-to-data="{{$index}}" et-in="scaleUp delay200" et-out="scaleDownUp" ng-click="patientList.selected.operation_history.current={{$index}}">
                                     {{al.operation}}
                                     </a>
                                 </li>
                             </ul>
-                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay500" et-out="scaleDownUp"></i>
+                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay400" et-out="scaleDownUp"></i>
                             </div>
-                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="scaleUpDown delay500" et-out="scaleDown"></i>
+                            <div ng-click="patientList.selected.operation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next fa fa-chevron-down" et-in="scaleUpDown delay400" et-out="scaleDown"></i>
                             </div>
                         </div>
                         <h3>{{operhx.operation}}</h3>
-                        <h6>{{operhx.date| date:'fullDate'}}</h6>
+                        <h4>{{operhx.date| date:'fullDate'}}</h4>
                         <p>{{operhx.details}}</p>
                     </div>
                 </div>
@@ -182,9 +182,9 @@
                             </a>
                         </li>
                     </ul>
-                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay500" et-out="scaleDownUp"></i>
+                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$first}' class="et-pre fa fa-chevron-up" et-in="scaleUp delay400" et-out="scaleDownUp"></i>
                     </div>
-                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-down" et-in="scaleUpDown delay500" et-out="scaleDown"></i>
+                    <div ng-click="patientList.selected.consultation_history.current={{$index}}"><i ng-class='{hidden:$last}' class="et-next  fa fa-chevron-down" et-in="scaleUpDown delay400" et-out="scaleDown"></i>
                     </div>
 
                 </div>

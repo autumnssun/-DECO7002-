@@ -10,6 +10,8 @@
 angular.module('animationProjectApp')
     .controller('PaitentslistCtrl', function($scope, $http) {
         //here we define the enter frame animation
+        $scope.time_animation_in = 'flipInTop';
+        $scope.time_animnation_out = 'flipOutTop';
         $scope.currentPage = 0;
         $scope.medata = [{
             'key': 'Series 1',
@@ -21,7 +23,7 @@ angular.module('animationProjectApp')
                 [1036040400000, -5.2],
                 [1038632400000, 0.42]
             ]
-        },{
+        }, {
             'key': 'Series 2',
             'values': [
                 [1025409600000, 0],
