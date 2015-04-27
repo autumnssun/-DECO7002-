@@ -8,40 +8,22 @@
  * Controller of the animationProjectApp
  */
 angular.module('animationProjectApp')
-    .controller('MainCtrl', function($scope) {
+    .controller('MainCtrl', function($scope, parseAngularService, pang, $http) {
+        $scope.patientList = {};
+        $scope.patientList = pang.Collection('patients').build();
+        /// old codes started here
+
         $scope.currentPage = 0;
-        $scope.medata = [{
-            'key': 'Series 1',
-            'values': [
-                [1025409600000, 0],
-                [1028088000000, -6.3],
-                [1030766400000, -5.4],
-                [1033358400000, -11.5],
-                [1036040400000, -5.2],
-                [1038632400000, 0.42]
-            ]
-        },{
-            'key': 'Series 2',
-            'values': [
-                [1025409600000, 0],
-                [1028088000000, 6.42],
-                [1030766400000, 5.31],
-                [1033358400000, 11.32],
-                [1036040400000, 5.4],
-                [1038632400000, 42.53]
-            ]
-        }];
 
         $scope.cardAnimation = 'classSlideFromTop';
         $scope.animationClass = 'pagePushRight';
         $scope.hideMain = false;
-        $scope.patientList = {};
-        var file = 'assets/patients.json';
+        //var file = 'assets/patients.json';
         //var file = 'assets/one_user.json';
-        $http.get(file).success(function(data) {
-            $scope.patientList = data.users;
-            $scope.patientList.selected = $scope.patientList[0];
-        });
+        // $http.get(file).success(function(data) {
+        //     $scope.patientList = data.users;
+        //     $scope.patientList.selected = $scope.patientList[0];
+        // });
 
         $scope.toogle = function() {
             $scope.hideMain = !$scope.hideMain;
@@ -50,20 +32,33 @@ angular.module('animationProjectApp')
 
         $scope.previousConsultation = function() {
             $scope.cardAnimation = 'my-element';
-            console.log($scope.hideMain);
+            // console.log($scope.hideMain);
             $scope.hideMain = !$scope.hideMain;
         };
+
+
         $scope.loadPaitent = function(_patient) {
             $scope.currentPage = 0;
             $scope.hideMain = false;
             $scope.patientList.selected = _patient;
+            var createdPointer = parseAngularService.createdPointerWithPrtObject(_patient);
+            //run the cloud code: Patientquery with pID Parameter
+            Parse.Cloud.run('patientQuery', {
+                'pID': _patient
+            }, {
+                success: function(result) {
+                    // result is 'Hello world!'
+                    console.log(result)
+                },
+                error: function(error) {
+                    alert('error');
+                }
+            });
+            // $scope.medications = pang.Collection('medications').where({
+            //     'precriptionForPatient': createdPointer
+            // }).build();
+        };
 
-        };
-        $scope.xAxisTickFormatFunction = function() {
-            return function(d) {
-                return d3.time.format('%b')(new Date(d));
-            };
-        };
 
         $scope.$on('ngRepeatFinished', function() {
             PageTransitions.init();

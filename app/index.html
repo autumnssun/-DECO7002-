@@ -47,7 +47,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Non-Animated</a>
+                    <li><a href="#/queryScript">Non-Animated</a>
                     </li>
                     <li><a href="#/paitentsList">Animated</a>
                     </li>
@@ -111,7 +111,6 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/ngFx/dist/ngFx.js"></script>
     <script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
     <script src="bower_components/d3/d3.js"></script>
@@ -124,6 +123,11 @@
     <script src="bower_components/microplugin/src/microplugin.js"></script>
     <script src="bower_components/selectize/dist/js/selectize.js"></script>
     <!-- endbower -->
+    <!--This is parse intergation codes. Pang will be used inthe parse angular services for CURD-->
+    <script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
+    <script src="lib/pang.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
@@ -133,6 +137,8 @@
     <script src="scripts/controllers/sandbox.js"></script>
     <script src="scripts/directives/consultation.js"></script>
     <script src="scripts/directives/onfinishrender.js"></script>
+    <script src="scripts/services/parseangularservice.js"></script>
+    <script src="scripts/controllers/queryscript.js"></script>
     <!-- endbuild -->
     <!--script src="scripts/lib/demo.js"></script-->
     <script src='lib/elementTransitions.js'></script>
